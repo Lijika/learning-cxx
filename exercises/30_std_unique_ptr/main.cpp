@@ -49,6 +49,13 @@ int main(int argc, char **argv) {
 
     // ---- 不要修改以上代码 ----
 
+    for (size_t i = 0; i < 3; ++i) {
+        std::cout << "problems[" << i << "]:" << std::endl;
+        for (const auto& str : problems[i]) {
+            std::cout << "  " << str << std::endl;
+        }
+    }
+
     std::vector<const char *> answers[]{
         {"fd"},
         // TODO: 分析 problems[1] 中资源的生命周期，将记录填入 `std::vector`
